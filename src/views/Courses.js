@@ -45,7 +45,7 @@ class Courses extends React.Component{
     data: null
   };
   async componentDidMount(){
-    const res = await (await fetch(`http://must-server.herokuapp.com/api/MUST/IT/courses-list?filtered=true`)).json();
+    const res = await (await fetch(`https://must-server.herokuapp.com/api/MUST/IT/courses-list?filtered=true`)).json();
     this.setState({data: res.links, loading:false})
   }
   render(){

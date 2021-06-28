@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 import logo from './logo.svg';
 // import './App.css';
@@ -14,7 +15,7 @@ function App() {
 		
 		<Router basename={process.env.PUBLIC_URL}>
 			<Switch>
-				<Route path={`${process.env.PUBLIC_URL}/test`} >
+				<Route path="test" >
 					<Courses />
 				</Route>
 				<Route path="/test2" >
