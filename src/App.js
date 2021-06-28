@@ -12,9 +12,12 @@ function App() {
 		<Header />
 		{/* <h1>page 1</h1> */}
 		
-		<Router>
+		<Router basename={process.env.PUBLIC_URL}>
 			<Switch>
 				<Route path={`${process.env.PUBLIC_URL}/test`} >
+					<Courses />
+				</Route>
+				<Route path="/test2" >
 					<Courses />
 				</Route>
 				<Route path="/Courses">
