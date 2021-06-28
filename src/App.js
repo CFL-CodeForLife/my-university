@@ -14,7 +14,7 @@ function App() {
 		
 		<Router>
 			<Switch>
-				<Route path="/test" >
+				<Route path={`${process.env.PUBLIC_URL}/test`} >
 					<Courses />
 				</Route>
 				<Route path="/Courses">
